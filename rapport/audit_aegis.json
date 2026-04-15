@@ -1,0 +1,131 @@
+{
+  "date": "2026-04-15 14:09:59",
+  "hostname": "mouloudDefense",
+  "ports_ouverts": [
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "127.0.0.54:53"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "127.0.0.53%lo:53"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "127.0.0.1:323"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "0.0.0.0:5353"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "0.0.0.0:35948"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "[::]:53016"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "[::1]:323"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "[fe80::20c:29ff:fe5f:bece]%ens33:546"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "[::]:5353"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "127.0.0.1:631"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "127.0.0.53%lo:53"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "0.0.0.0:22"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "127.0.0.54:53"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "[::1]:631"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "*:80"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "[::]:22"
+    }
+  ],
+  "services_actifs": [
+    "accounts-daemon.service",
+    "apache2.service",
+    "avahi-daemon.service",
+    "chrony.service",
+    "colord.service",
+    "cron.service",
+    "cups-browsed.service",
+    "cups.service",
+    "dbus.service",
+    "fwupd.service",
+    "gdm.service",
+    "ModemManager.service",
+    "networkd-dispatcher.service",
+    "NetworkManager.service",
+    "open-vm-tools.service",
+    "polkit.service",
+    "power-profiles-daemon.service",
+    "rsyslog.service",
+    "rtkit-daemon.service",
+    "snapd.service",
+    "ssh.service",
+    "switcheroo-control.service",
+    "systemd-journald.service",
+    "systemd-logind.service",
+    "systemd-oomd.service",
+    "systemd-resolved.service",
+    "systemd-udevd.service",
+    "udisks2.service",
+    "unattended-upgrades.service",
+    "upower.service",
+    "user@1000.service",
+    "vgauth.service",
+    "wpa_supplicant.service"
+  ],
+  "securite": {
+    "ufw_actif": false,
+    "fail2ban_actif": false,
+    "ssh_no_root": false,
+    "ssh_port_custom": false,
+    "ssh_no_password": false,
+    "suid_find_faille": true,
+    "webshell_present": true,
+    "config_php_present": true
+  }
+}
