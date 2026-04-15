@@ -27,7 +27,8 @@ Notre mission est d'auditer, sécuriser et documenter l'infrastructure.
 ---
 
 ## 📁 Structure du projet
-<img width="1157" height="696" alt="image" src="https://github.com/user-attachments/assets/0a846164-b514-471f-a86e-de29f94a8cc0" />
+<img width="1360" height="1211" alt="arborescence_aegis_complete" src="https://github.com/user-attachments/assets/99ff269d-8fba-4b0c-80ab-4df873a58adc" />
+
 
 ---
 
