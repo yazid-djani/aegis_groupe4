@@ -1,0 +1,165 @@
+{
+  "date": "2026-04-16 15:27:29",
+  "hostname": "mouloudDefense",
+  "ports_ouverts": [
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "127.0.0.54:53"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "127.0.0.53%lo:53"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "127.0.0.1:323"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "0.0.0.0:52537"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "172.20.10.5:3702"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "239.255.255.250:3702"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "0.0.0.0:37967"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "0.0.0.0:5353"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "[::1]:323"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "[fe80::20c:29ff:fe5f:bece]%ens33:546"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "[::]:50338"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "*:51270"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "[fe80::20c:29ff:fe5f:bece]%ens33:3702"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "[ff02::c]%ens33:3702"
+    },
+    {
+      "protocole": "udp",
+      "etat": "UNCONN",
+      "adresse": "[::]:5353"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "127.0.0.54:53"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "127.0.0.1:8080"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "0.0.0.0:53032"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "127.0.0.53%lo:53"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "127.0.0.1:6060"
+    },
+    {
+      "protocole": "tcp",
+      "etat": "LISTEN",
+      "adresse": "[::]:53032"
+    }
+  ],
+  "services_actifs": [
+    "accounts-daemon.service",
+    "auditd.service",
+    "avahi-daemon.service",
+    "chrony.service",
+    "colord.service",
+    "cron.service",
+    "crowdsec-firewall-bouncer.service",
+    "crowdsec.service",
+    "dbus.service",
+    "fail2ban.service",
+    "fwupd.service",
+    "gdm.service",
+    "ModemManager.service",
+    "networkd-dispatcher.service",
+    "NetworkManager.service",
+    "open-vm-tools.service",
+    "packagekit.service",
+    "polkit.service",
+    "power-profiles-daemon.service",
+    "rsyslog.service",
+    "rtkit-daemon.service",
+    "snapd.service",
+    "ssh.service",
+    "switcheroo-control.service",
+    "systemd-journald.service",
+    "systemd-logind.service",
+    "systemd-oomd.service",
+    "systemd-resolved.service",
+    "systemd-udevd.service",
+    "udisks2.service",
+    "unattended-upgrades.service",
+    "upower.service",
+    "user@1000.service",
+    "vgauth.service",
+    "wpa_supplicant.service"
+  ],
+  "securite": {
+    "ufw_actif": true,
+    "fail2ban_actif": true,
+    "ssh_no_root": true,
+    "ssh_port_custom": true,
+    "ssh_no_password": true,
+    "ssh_no_tcp_forwarding": true,
+    "ssh_x11_forwarding_off": true,
+    "ssh_max_auth_tries": true,
+    "suid_find_faille": false,
+    "webshell_present": false,
+    "config_php_expose": false,
+    "crowdsec_actif": true,
+    "auditd_actif": true,
+    "apparmor_actif": true,
+    "deploy_shell_nologin": true
+  }
+}

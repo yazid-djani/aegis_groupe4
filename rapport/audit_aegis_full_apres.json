@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "timestamp": "2026-04-16T15:27:29.207580",
+    "hostname": "mouloudDefense",
+    "score": 100,
+    "distribution": {
+      "INFO": 1,
+      "CRITIQUE": 8,
+      "ELEVE": 5,
+      "MOYEN": 5,
+      "FAIBLE": 1
+    },
+    "critiques": 0
+  },
+  "resultats": {
+    "timestamp": "2026-04-16T15:27:29.207580",
+    "hostname": "mouloudDefense",
+    "user": "root",
+    "ports": {
+      "ports_ouverts": [
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "127.0.0.54:53"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "127.0.0.53%lo:53"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "127.0.0.1:323"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "0.0.0.0:52537"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "172.20.10.5:3702"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "239.255.255.250:3702"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "0.0.0.0:37967"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "0.0.0.0:5353"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "[::1]:323"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "[fe80::20c:29ff:fe5f:bece]%ens33:546"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "[::]:50338"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "*:51270"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "[fe80::20c:29ff:fe5f:bece]%ens33:3702"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "[ff02::c]%ens33:3702"
+        },
+        {
+          "protocole": "udp",
+          "etat": "UNCONN",
+          "adresse": "[::]:5353"
+        },
+        {
+          "protocole": "tcp",
+          "etat": "LISTEN",
+          "adresse": "127.0.0.54:53"
+        },
+        {
+          "protocole": "tcp",
+          "etat": "LISTEN",
+          "adresse": "127.0.0.1:8080"
+        },
+        {
+          "protocole": "tcp",
+          "etat": "LISTEN",
+          "adresse": "0.0.0.0:53032"
+        },
+        {
+          "protocole": "tcp",
+          "etat": "LISTEN",
+          "adresse": "127.0.0.53%lo:53"
+        },
+        {
+          "protocole": "tcp",
+          "etat": "LISTEN",
+          "adresse": "127.0.0.1:6060"
+        },
+        {
+          "protocole": "tcp",
+          "etat": "LISTEN",
+          "adresse": "[::]:53032"
+        }
+      ],
+      "nombre": 21
+    },
+    "services_reseau": {
+      "services_reseau": [
+        "udp   UNCONN 0      0                            127.0.0.54:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=594,fd=16))",
+        "udp   UNCONN 0      0                         127.0.0.53%lo:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=594,fd=14))",
+        "udp   UNCONN 0      0                             127.0.0.1:323        0.0.0.0:*    users:((\"chronyd\",pid=1684,fd=4))",
+        "udp   UNCONN 0      0                               0.0.0.0:52537      0.0.0.0:*    users:((\"python3\",pid=297481,fd=8))",
+        "udp   UNCONN 0      0                           172.20.10.5:3702       0.0.0.0:*    users:((\"python3\",pid=297481,fd=9))",
+        "udp   UNCONN 0      0                       239.255.255.250:3702       0.0.0.0:*    users:((\"python3\",pid=297481,fd=7))",
+        "udp   UNCONN 0      0                               0.0.0.0:37967      0.0.0.0:*    users:((\"avahi-daemon\",pid=1521,fd=14))",
+        "udp   UNCONN 0      0                               0.0.0.0:5353       0.0.0.0:*    users:((\"avahi-daemon\",pid=1521,fd=12))",
+        "udp   UNCONN 0      0                                 [::1]:323           [::]:*    users:((\"chronyd\",pid=1684,fd=5))",
+        "udp   UNCONN 0      0      [fe80::20c:29ff:fe5f:bece]%ens33:546           [::]:*    users:((\"NetworkManager\",pid=1688,fd=29))",
+        "udp   UNCONN 0      0                                  [::]:50338         [::]:*    users:((\"avahi-daemon\",pid=1521,fd=15))",
+        "udp   UNCONN 0      0                                     *:51270            *:*    users:((\"python3\",pid=297481,fd=11))",
+        "udp   UNCONN 0      0      [fe80::20c:29ff:fe5f:bece]%ens33:3702          [::]:*    users:((\"python3\",pid=297481,fd=12))",
+        "udp   UNCONN 0      0                       [ff02::c]%ens33:3702          [::]:*    users:((\"python3\",pid=297481,fd=10))",
+        "udp   UNCONN 0      0                                  [::]:5353          [::]:*    users:((\"avahi-daemon\",pid=1521,fd=13))",
+        "tcp   LISTEN 0      4096                         127.0.0.54:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=594,fd=17))",
+        "tcp   LISTEN 0      4096                          127.0.0.1:8080       0.0.0.0:*    users:((\"crowdsec\",pid=2265,fd=14))",
+        "tcp   LISTEN 0      4096                            0.0.0.0:53032      0.0.0.0:*    users:((\"sshd\",pid=1865,fd=3),(\"systemd\",pid=1,fd=313))",
+        "tcp   LISTEN 0      4096                      127.0.0.53%lo:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=594,fd=15))",
+        "tcp   LISTEN 0      4096                          127.0.0.1:6060       0.0.0.0:*    users:((\"crowdsec\",pid=2265,fd=22))",
+        "tcp   LISTEN 0      4096                               [::]:53032         [::]:*    users:((\"sshd\",pid=1865,fd=4),(\"systemd\",pid=1,fd=314))"
+      ]
+    },
+    "ssh": {
+      "ssh_no_root": true,
+      "ssh_no_password": true,
+      "ssh_port_custom": true,
+      "ssh_no_tcp_forwarding": true,
+      "ssh_no_x11": true,
+      "ssh_max_auth_tries": true,
+      "ssh_no_agent_forwarding": true
+    },
+    "firewall": {
+      "ufw_active": true
+    },
+    "fail2ban": {
+      "fail2ban_active": true
+    },
+    "crowdsec": {
+      "crowdsec_active": true
+    },
+    "suid": {
+      "suid_dangereux": []
+    },
+    "permissions": {
+      "violations_permissions": []
+    },
+    "uid_zero": {
+      "uid_zero_users": []
+    },
+    "deploy_account": {
+      "deploy_locked": true
+    },
+    "services": {
+      "services_actifs": [
+        "accounts-daemon.service",
+        "auditd.service",
+        "avahi-daemon.service",
+        "chrony.service",
+        "colord.service",
+        "cron.service",
+        "crowdsec-firewall-bouncer.service",
+        "crowdsec.service",
+        "dbus.service",
+        "fail2ban.service",
+        "fwupd.service",
+        "gdm.service",
+        "ModemManager.service",
+        "networkd-dispatcher.service",
+        "NetworkManager.service",
+        "open-vm-tools.service",
+        "packagekit.service",
+        "polkit.service",
+        "power-profiles-daemon.service",
+        "rsyslog.service",
+        "rtkit-daemon.service",
+        "snapd.service",
+        "ssh.service",
+        "switcheroo-control.service",
+        "systemd-journald.service",
+        "systemd-logind.service",
+        "systemd-oomd.service",
+        "systemd-resolved.service",
+        "systemd-udevd.service",
+        "udisks2.service",
+        "unattended-upgrades.service",
+        "upower.service",
+        "user@1000.service",
+        "vgauth.service",
+        "wpa_supplicant.service"
+      ]
+    },
+    "auditd": {
+      "auditd_active": true
+    },
+    "apparmor": {
+      "apparmor_active": true
+    },
+    "webshell": {
+      "webshells": []
+    },
+    "webshell_content": {
+      "webshells_contenu": []
+    },
+    "config_expose": {
+      "config_expose": false
+    },
+    "logs": {
+      "logs_systeme": [
+        {
+          "fichier": "/var/log/auth.log",
+          "taille_octets": 318210
+        },
+        {
+          "fichier": "/var/log/syslog",
+          "taille_octets": 7240592
+        }
+      ]
+    }
+  },
+  "findings": [
+    {
+      "nom": "listening_services",
+      "ok": true,
+      "severite": "INFO",
+      "message": "21 service(s) réseau en écoute",
+      "remediation": "",
+      "preuve": "udp   UNCONN 0      0                            127.0.0.54:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=594,fd=16))\nudp   UNCONN 0      0                         127.0.0.53%lo:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=594,fd=14))\nudp   UNCONN 0      0                             127.0.0.1:323        0.0.0.0:*    users:((\"chronyd\",pid=1684,fd=4))\nudp   UNCONN 0      0                               0.0.0.0:52537      0.0.0.0:*    users:((\"python3\",pid=297481,fd=8))\nudp   UNCONN 0      0                           172.20.10.5:3702       0.0.0.0:*    users:((\"python3\",pid=297481,fd=9))\nudp   UNCONN 0      0                       239.255.255.250:3702       0.0.0.0:*    users:((\"python3\",pid=297481,fd=7))\nudp   UNCONN 0      0                               0.0.0.0:37967      0.0.0.0:*    users:((\"avahi-daemon\",pid=1521,fd=14))\nudp   UNCONN 0      0                               0.0.0.0:5353       0.0.0.0:*    users:((\"avahi-daemon\",pid=1521,fd=12))\nudp   UNCONN 0      0                                 [::1]:323           [::]:*    users:((\"chronyd\",pid=1684,fd=5))\nudp   UNCONN 0      0      [fe80::20c:29ff:fe5f:bece]%ens33:546           [::]:*    users:((\"NetworkManager\",pid=1688,fd=29))"
+    },
+    {
+      "nom": "ssh_no_root",
+      "ok": true,
+      "severite": "CRITIQUE",
+      "message": "PermitRootLogin no",
+      "remediation": "Ajouter 'PermitRootLogin no' dans sshd_config",
+      "preuve": ""
+    },
+    {
+      "nom": "ssh_no_password",
+      "ok": true,
+      "severite": "ELEVE",
+      "message": "PasswordAuthentication no",
+      "remediation": "Ajouter 'PasswordAuthentication no' dans sshd_config",
+      "preuve": ""
+    },
+    {
+      "nom": "ssh_port_custom",
+      "ok": true,
+      "severite": "MOYEN",
+      "message": "Port SSH non standard",
+      "remediation": "Changer le port dans sshd_config (ex: Port 53032)",
+      "preuve": ""
+    },
+    {
+      "nom": "ssh_no_tcp_forwarding",
+      "ok": true,
+      "severite": "MOYEN",
+      "message": "AllowTcpForwarding no",
+      "remediation": "Ajouter 'AllowTcpForwarding no' dans sshd_config",
+      "preuve": ""
+    },
+    {
+      "nom": "ssh_no_x11",
+      "ok": true,
+      "severite": "MOYEN",
+      "message": "X11Forwarding no",
+      "remediation": "Ajouter 'X11Forwarding no' dans sshd_config",
+      "preuve": ""
+    },
+    {
+      "nom": "ssh_max_auth_tries",
+      "ok": true,
+      "severite": "MOYEN",
+      "message": "MaxAuthTries <= 3",
+      "remediation": "Ajouter 'MaxAuthTries 3' dans sshd_config",
+      "preuve": ""
+    },
+    {
+      "nom": "ssh_no_agent_forwarding",
+      "ok": true,
+      "severite": "FAIBLE",
+      "message": "AllowAgentForwarding no",
+      "remediation": "Ajouter 'AllowAgentForwarding no' dans sshd_config",
+      "preuve": ""
+    },
+    {
+      "nom": "ufw_firewall",
+      "ok": true,
+      "severite": "CRITIQUE",
+      "message": "Pare-feu UFW actif",
+      "remediation": "sudo ufw enable",
+      "preuve": ""
+    },
+    {
+      "nom": "fail2ban_service",
+      "ok": true,
+      "severite": "ELEVE",
+      "message": "Service fail2ban actif",
+      "remediation": "sudo systemctl enable fail2ban --now",
+      "preuve": ""
+    },
+    {
+      "nom": "crowdsec_service",
+      "ok": true,
+      "severite": "ELEVE",
+      "message": "CrowdSec IDS/IPS actif",
+      "remediation": "sudo systemctl enable crowdsec --now",
+      "preuve": ""
+    },
+    {
+      "nom": "dangerous_suid",
+      "ok": true,
+      "severite": "CRITIQUE",
+      "message": "Binaires SUID dangereux : 0",
+      "remediation": "sudo chmod u-s <binaire>",
+      "preuve": "Aucun"
+    },
+    {
+      "nom": "critical_file_permissions",
+      "ok": true,
+      "severite": "ELEVE",
+      "message": "Violations de permissions : 0",
+      "remediation": "",
+      "preuve": "Aucune"
+    },
+    {
+      "nom": "uid_zero_check",
+      "ok": true,
+      "severite": "CRITIQUE",
+      "message": "Utilisateurs UID 0 non-root : 0",
+      "remediation": "",
+      "preuve": "Aucun"
+    },
+    {
+      "nom": "deploy_account_locked",
+      "ok": true,
+      "severite": "CRITIQUE",
+      "message": "Compte deploy verrouillé",
+      "remediation": "sudo usermod -L deploy && sudo usermod -s /usr/sbin/nologin deploy",
+      "preuve": ""
+    },
+    {
+      "nom": "auditd_service",
+      "ok": true,
+      "severite": "ELEVE",
+      "message": "Service auditd actif",
+      "remediation": "sudo systemctl enable auditd --now",
+      "preuve": ""
+    },
+    {
+      "nom": "apparmor_service",
+      "ok": true,
+      "severite": "MOYEN",
+      "message": "AppArmor (MAC framework) actif",
+      "remediation": "sudo systemctl enable apparmor --now",
+      "preuve": ""
+    },
+    {
+      "nom": "webshell_detection",
+      "ok": true,
+      "severite": "CRITIQUE",
+      "message": "Webshells détectés (par chemin) : 0",
+      "remediation": "sudo rm <fichier>",
+      "preuve": "Aucun"
+    },
+    {
+      "nom": "webshell_content_scan",
+      "ok": true,
+      "severite": "CRITIQUE",
+      "message": "Fichiers PHP avec patterns webshell : 0",
+      "remediation": "sudo rm <fichier suspect>",
+      "preuve": "Aucun pattern dangereux détecté"
+    },
+    {
+      "nom": "exposed_config",
+      "ok": true,
+      "severite": "CRITIQUE",
+      "message": "config.php non lisible publiquement",
+      "remediation": "sudo chmod 640 /var/www/html/config.php",
+      "preuve": "Permissions : 0640 — OK"
+    }
+  ]
+}
