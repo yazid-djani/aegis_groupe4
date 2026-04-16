@@ -1,0 +1,823 @@
+
+[ Lynis 3.1.4 ]
+
+################################################################################
+  Lynis comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+  welcome to redistribute it under the terms of the GNU General Public License.
+  See the LICENSE file for details about using this software.
+
+  2007-2024, CISOfy - https://cisofy.com/lynis/
+  Enterprise support available (compliance, plugins, interface and tools)
+################################################################################
+
+
+[+] Initializing program
+------------------------------------
+
+
+Warning: PID file exists, probably another Lynis process is running.
+------------------------------------------------------------------------------
+If you are unsure if another Lynis process is running currently, you are advised
+to stop the current process and check the process list first. If you cancelled
+a previous instance (by using CTRL+C), you can ignore this message.
+
+You are advised to check for temporary files after program completion.
+------------------------------------------------------------------------------
+
+Note: Cancelling the program can leave temporary files behind
+[2C- Detecting OS... [41C [ DONE ]
+[2C- Checking profiles...[37C [ DONE ]
+[2C- Detecting language and localization[22C [ fr ]
+
+  ---------------------------------------------------
+  Program version:           3.1.4
+  Operating system:          Linux
+  Operating system name:     Ubuntu
+  Operating system version:  25.10
+  Kernel version:            6.17.0
+  Hardware platform:         x86_64
+  Hostname:                  mouloudDefense
+  ---------------------------------------------------
+  Profiles:                  /etc/lynis/default.prf
+  Log file:                  /var/log/lynis.log
+  Report file:               /var/log/lynis-report.dat
+  Report version:            1.0
+  Plugin directory:          /etc/lynis/plugins
+  ---------------------------------------------------
+  Auditor:                   [Not Specified]
+  Language:                  fr
+  Test category:             all
+  Test group:                all
+  ---------------------------------------------------
+[2C- Program update status... [32C [ PAS DE MISE A JOUR ]
+
+[+] Outils système
+------------------------------------
+[2C- Scanning available tools...[30C
+[2C- Checking system binaries...[30C
+
+[+] Plugins (phase 1)
+------------------------------------
+[0CNote : Les plugins ont des tests plus poussés qui peuvent prendre plusieurs minutes[0C
+[0C [0C
+[2C- Plugin: debian[43C
+    [
+[+] Debian Tests
+------------------------------------
+[2C- Checking for system binaries that are required by Debian Tests...[0C
+[4C- Checking /bin... [38C [ FOUND ]
+[4C- Checking /sbin... [37C [ FOUND ]
+[4C- Checking /usr/bin... [34C [ FOUND ]
+[4C- Checking /usr/sbin... [33C [ FOUND ]
+[4C- Checking /usr/local/bin... [28C [ FOUND ]
+[4C- Checking /usr/local/sbin... [27C [ FOUND ]
+[2C- Authentication:[42C
+[4C- PAM (Pluggable Authentication Modules):[16C
+
+  [WARNING]: Test DEB-0001 had a long execution: 24.404737 seconds
+
+[6C- libpam-tmpdir[40C [ Installed and Enabled ]
+[2C- File System Checks:[38C
+[4C- DM-Crypt, Cryptsetup & Cryptmount:[21C
+[2C- Software:[48C
+[4C- apt-listbugs[43C [ Not Installed ]
+[4C- apt-listchanges[40C [ Installed and enabled for apt ]
+[4C- needrestart[44C [ Installed ]
+[4C- fail2ban[47C [ Installed with jail.local ]
+]
+
+[+] Démarrage et services
+------------------------------------
+[2C- Service Manager[42C [ systemd ]
+[2C- Checking UEFI boot[39C [ DÉSACTIVÉ ]
+[2C- Checking presence GRUB2[34C [ TROUVÉ ]
+[4C- Checking for password protection[23C [ OK ]
+[2C- Check running services (systemctl)[23C [ FAIT ]
+[8CResult: found 34 running services[20C
+[2C- Check enabled services at boot (systemctl)[15C [ FAIT ]
+[8CResult: found 65 enabled services[20C
+[2C- Check startup files (permissions)[24C [ OK ]
+[2C- Running 'systemd-analyze security'[23C
+[6CUnit name (exposure value) and predicate[15C
+[6C--------------------------------[23C
+[4C- ModemManager.service (value=6.3)[23C [ MOYEN ]
+[4C- NetworkManager.service (value=7.8)[21C [ EXPOSÉ ]
+[4C- accounts-daemon.service (value=5.5)[20C [ MOYEN ]
+[4C- acct-monthly-report.service (value=6.4)[16C [ MOYEN ]
+[4C- alsa-state.service (value=9.6)[25C [ RISQUÉ ]
+[4C- anacron.service (value=9.6)[28C [ RISQUÉ ]
+[4C- apache2.service (value=8.0)[28C [ EXPOSÉ ]
+[4C- auditd.service (value=9.4)[29C [ RISQUÉ ]
+[4C- avahi-daemon.service (value=9.6)[23C [ RISQUÉ ]
+[4C- chrony.service (value=3.7)[29C [ PROTÉGÉ ]
+[4C- cloud-init-main.service (value=9.5)[20C [ RISQUÉ ]
+[4C- colord.service (value=3.5)[29C [ PROTÉGÉ ]
+[4C- cron.service (value=9.6)[31C [ RISQUÉ ]
+[4C- crowdsec-firewall-bouncer.service (value=9.6)[10C [ RISQUÉ ]
+[4C- crowdsec.service (value=9.6)[27C [ RISQUÉ ]
+[4C- dbus.service (value=9.2)[31C [ RISQUÉ ]
+[4C- dmesg.service (value=9.6)[30C [ RISQUÉ ]
+[4C- emergency.service (value=9.5)[26C [ RISQUÉ ]
+[4C- fail2ban.service (value=9.6)[27C [ RISQUÉ ]
+[4C- fwupd.service (value=4.5)[30C [ PROTÉGÉ ]
+[4C- gdm.service (value=9.8)[32C [ RISQUÉ ]
+[4C- getty@tty1.service (value=9.6)[25C [ RISQUÉ ]
+[4C- lynis.service (value=9.6)[30C [ RISQUÉ ]
+[4C- networkd-dispatcher.service (value=9.6)[16C [ RISQUÉ ]
+[4C- open-vm-tools.service (value=9.5)[22C [ RISQUÉ ]
+[4C- plymouth-start.service (value=9.5)[21C [ RISQUÉ ]
+[4C- polkit.service (value=1.2)[29C [ PROTÉGÉ ]
+[4C- postfix.service (value=3.9)[28C [ PROTÉGÉ ]
+[4C- postfix@-.service (value=3.9)[26C [ PROTÉGÉ ]
+[4C- power-profiles-daemon.service (value=1.0)[14C [ PROTÉGÉ ]
+[4C- rc-local.service (value=9.6)[27C [ RISQUÉ ]
+[4C- rescue.service (value=9.5)[29C [ RISQUÉ ]
+[4C- rsyslog.service (value=6.3)[28C [ MOYEN ]
+[4C- rtkit-daemon.service (value=7.2)[23C [ MOYEN ]
+[4C- snapd.service (value=9.9)[30C [ RISQUÉ ]
+[4C- ssh.service (value=9.6)[32C [ RISQUÉ ]
+[4C- sshd@sshd-keygen.service (value=9.6)[19C [ RISQUÉ ]
+[4C- sssd-autofs.service (value=7.1)[24C [ MOYEN ]
+[4C- sssd-nss.service (value=7.1)[27C [ MOYEN ]
+[4C- sssd-pac.service (value=7.1)[27C [ MOYEN ]
+[4C- sssd-pam.service (value=7.3)[27C [ MOYEN ]
+[4C- sssd-ssh.service (value=7.1)[27C [ MOYEN ]
+[4C- sssd-sudo.service (value=7.1)[26C [ MOYEN ]
+[4C- sssd.service (value=7.5)[31C [ EXPOSÉ ]
+[4C- switcheroo-control.service (value=7.6)[17C [ EXPOSÉ ]
+[4C- systemd-ask-password-console.service (value=9.4)[7C [ RISQUÉ ]
+[4C- systemd-ask-password-plymouth.service (value=9.5)[6C [ RISQUÉ ]
+[4C- systemd-ask-password-wall.service (value=9.4)[10C [ RISQUÉ ]
+[4C- systemd-bsod.service (value=9.5)[23C [ RISQUÉ ]
+[4C- systemd-hostnamed.service (value=1.7)[18C [ PROTÉGÉ ]
+[4C- systemd-initctl.service (value=9.4)[20C [ RISQUÉ ]
+[4C- systemd-journald.service (value=4.9)[19C [ PROTÉGÉ ]
+[4C- systemd-logind.service (value=2.8)[21C [ PROTÉGÉ ]
+[4C- systemd-networkd.service (value=2.9)[19C [ PROTÉGÉ ]
+[4C- systemd-oomd.service (value=1.8)[23C [ PROTÉGÉ ]
+[4C- systemd-resolved.service (value=2.2)[19C [ PROTÉGÉ ]
+[4C- systemd-rfkill.service (value=9.4)[21C [ RISQUÉ ]
+[4C- systemd-udevd.service (value=7.1)[22C [ MOYEN ]
+[4C- thermald.service (value=9.6)[27C [ RISQUÉ ]
+[4C- tpm-udev.service (value=9.6)[27C [ RISQUÉ ]
+[4C- ubuntu-advantage.service (value=9.6)[19C [ RISQUÉ ]
+[4C- udisks2.service (value=9.6)[28C [ RISQUÉ ]
+[4C- unattended-upgrades.service (value=9.6)[16C [ RISQUÉ ]
+[4C- upower.service (value=2.4)[29C [ PROTÉGÉ ]
+[4C- user@1000.service (value=9.4)[26C [ RISQUÉ ]
+[4C- uuidd.service (value=5.8)[30C [ MOYEN ]
+[4C- vgauth.service (value=9.5)[29C [ RISQUÉ ]
+[4C- whoopsie.service (value=9.6)[27C [ RISQUÉ ]
+[4C- wpa_supplicant.service (value=9.6)[21C [ RISQUÉ ]
+
+[+] Noyau
+------------------------------------
+[2C- Checking default runlevel[32C [ runlevel 5 ]
+[2C- Checking CPU support (NX/PAE)[28C
+[4CCPU support: PAE and/or NoeXecute supported[14C [ TROUVÉ ]
+[2C- Checking kernel version and release[22C [ FAIT ]
+[2C- Checking kernel type[37C [ FAIT ]
+[2C- Checking loaded kernel modules[27C [ FAIT ]
+[6CFound 100 active modules[31C
+[2C- Checking Linux kernel configuration file[17C [ TROUVÉ ]
+[2C- Checking default I/O kernel scheduler[20C [ NON TROUVÉ ]
+[2C- Checking for available kernel update[21C [ OK ]
+[2C- Checking core dumps configuration[24C
+[4C- configuration in systemd conf files[20C [ PAR DÉFAUT ]
+[4C- configuration in /etc/profile[26C [ PAR DÉFAUT ]
+[4C- 'hard' configuration in /etc/security/limits.conf[6C [ ENABLED ]
+[4C- 'soft' configuration in /etc/security/limits.conf[6C [ DISABLED ]
+[4C- Checking setuid core dumps configuration[15C [ DÉSACTIVÉ ]
+[2C- Check if reboot is needed[32C [ NON ]
+
+[+] Mémoire et processus
+------------------------------------
+[2C- Checking /proc/meminfo[35C [ TROUVÉ ]
+[2C- Searching for dead/zombie processes[22C [ TROUVÉ ]
+[2C- Searching for IO waiting processes[23C [ NON TROUVÉ ]
+[2C- Search prelink tooling[35C [ NON TROUVÉ ]
+
+[+] Utilisateurs, groupes et authentification
+------------------------------------
+[2C- Administrator accounts[35C [ OK ]
+[2C- Unique UIDs[46C [ OK ]
+[2C- Consistency of group files (grpck)[23C [ OK ]
+[2C- Unique group IDs[41C [ OK ]
+[2C- Unique group names[39C [ OK ]
+[2C- Password file consistency[32C [ OK ]
+[2C- Password hashing methods[33C [ SUGGESTION ]
+[2C- Password hashing rounds (minimum)[24C [ CONFIGURED ]
+[2C- Query system users (non daemons)[25C [ FAIT ]
+[2C- NIS+ authentication support[30C [ NON ACTIVÉ ]
+[2C- NIS authentication support[31C [ NON ACTIVÉ ]
+[2C- Sudoers file(s)[42C [ TROUVÉ ]
+[4C- Permissions for directory: /etc/sudoers.d[14C [ OK ]
+[4C- Permissions for: /etc/sudoers[26C [ OK ]
+[4C- Permissions for: /etc/sudoers.d/README[17C [ OK ]
+[2C- PAM password strength tools[30C [ OK ]
+[2C- PAM configuration files (pam.conf)[23C [ TROUVÉ ]
+[2C- PAM configuration files (pam.d)[26C [ TROUVÉ ]
+[2C- PAM modules[46C [ TROUVÉ ]
+[2C- LDAP module in PAM[39C [ NON TROUVÉ ]
+[2C- Accounts without expire date[29C [ SUGGESTION ]
+[2C- Accounts without password[32C [ OK ]
+[2C- Locked accounts[42C [ TROUVÉ ]
+[2C- User password aging (minimum)[28C [ CONFIGURED ]
+[2C- User password aging (maximum)[28C [ CONFIGURED ]
+[2C- Checking expired passwords[31C [ OK ]
+[2C- Checking Linux single user mode authentication[11C [ OK ]
+[2C- Determining default umask[32C
+[4C- umask (/etc/profile and /etc/profile.d)[16C [ OK ]
+[4C- umask (/etc/login.defs)[32C [ OK ]
+[2C- LDAP authentication support[30C [ NON ACTIVÉ ]
+[2C- Logging failed login attempts[28C [ DÉSACTIVÉ ]
+
+[+] Kerberos
+------------------------------------
+[2C- Check for Kerberos KDC and principals[20C [ NON TROUVÉ ]
+
+[+] Shells
+------------------------------------
+[2C- Checking shells from /etc/shells[25C
+[4CResult: found 8 shells (valid shells: 8).[16C
+[4C- Session timeout settings/tools[25C [ AUCUN ]
+[2C- Checking default umask values[28C
+[4C- Checking default umask in /etc/bash.bashrc[13C [ AUCUN ]
+[4C- Checking default umask in /etc/profile[17C [ OK ]
+
+[+] Systèmes de fichier
+------------------------------------
+[2C- Checking mount points[36C
+[4C- Checking /home mount point[29C [ SUGGESTION ]
+[4C- Checking /tmp mount point[30C [ OK ]
+[4C- Checking /var mount point[30C [ SUGGESTION ]
+[2C- Query swap partitions (fstab)[28C [ OK ]
+[2C- Testing swap partitions[34C [ OK ]
+[2C- Testing /proc mount (hidepid)[28C [ OK ]
+[2C- Checking for old files in /tmp[27C [ OK ]
+[2C- Checking /tmp sticky bit[33C [ OK ]
+[2C- Checking /var/tmp sticky bit[29C [ OK ]
+[2C- ACL support root file system[29C [ ACTIVÉ ]
+[2C- Mount options of /[39C [ OK ]
+[2C- Mount options of /dev[36C [ PARTIELLEMENT RENFORCÉ ]
+[2C- Mount options of /dev/shm[32C [ RENFORCÉ ]
+[2C- Mount options of /run[36C [ RENFORCÉ ]
+[2C- Mount options of /tmp[36C [ RENFORCÉ ]
+[2C- Total without nodev:11 noexec:37 nosuid:29 ro or noexec (W^X): 16 of total 54[0C
+[2C- Disable kernel support of some filesystems[15C
+
+[+] Périphériques USB
+------------------------------------
+[2C- Checking usb-storage driver (modprobe config)[12C [ DÉSACTIVÉ ]
+[2C- Checking USB devices authorization[23C [ ACTIVÉ ]
+[2C- Checking USBGuard[40C [ NON TROUVÉ ]
+
+[+] Stockage
+------------------------------------
+[2C- Checking firewire ohci driver (modprobe config)[10C [ DÉSACTIVÉ ]
+
+[+] NFS
+------------------------------------
+[2C- Check running NFS daemon[33C [ NON TROUVÉ ]
+
+[+] Services de noms
+------------------------------------
+[2C- Checking search domains[34C [ TROUVÉ ]
+[2C- Checking /etc/resolv.conf options[24C [ TROUVÉ ]
+[2C- Searching DNS domain name[32C [ INCONNU ]
+[2C- Checking /etc/hosts[38C
+[4C- Duplicate entries in hosts file[24C [ AUCUN ]
+[4C- Presence of configured hostname in /etc/hosts[10C [ TROUVÉ ]
+[4C- Hostname mapped to localhost[27C [ NON TROUVÉ ]
+[4C- Localhost mapping to IP address[24C [ OK ]
+
+[+] Ports et packages
+------------------------------------
+[2C- Searching package managers[31C
+[4C- Searching dpkg package manager[25C [ TROUVÉ ]
+[6C- Querying package manager[29C
+
+  [WARNING]: Test PKGS-7345 had a long execution: 13.350131 seconds
+
+[4C- Query unpurged packages[32C [ AUCUN ]
+[4C- debsums utility[40C [ TROUVÉ ]
+[6C- Cron job for debsums[33C [ NON TROUVÉ ]
+[2C- Checking security repository in sources.list.d directory[1C [ OK ]
+[2C- Checking APT package database[28C [ OK ]
+[2C- Checking vulnerable packages[29C [ OK ]
+
+  [WARNING]: Test PKGS-7392 had a long execution: 279.528911 seconds
+
+[2C- Checking upgradeable packages[28C [ TROUVÉ ]
+[2C- Checking package audit tool[30C [ INSTALLÉ ]
+[4CFound: apt-check[41C
+[2C- Toolkit for automatic upgrades (unattended-upgrade)[6C [ TROUVÉ ]
+
+[+] Mise en réseau
+------------------------------------
+[2C- Checking IPv6 configuration[30C [ ACTIVÉ ]
+[6CConfiguration method[35C [ AUTO ]
+[6CIPv6 only[46C [ NON ]
+[2C- Checking configured nameservers[26C
+[4C- Testing nameservers[36C
+[8CNameserver: 127.0.0.53[31C [ OK ]
+[4C- DNSSEC supported (systemd-resolved)[20C [ INCONNU ]
+[2C- Checking default gateway[33C [ FAIT ]
+[2C- Getting listening ports (TCP/UDP)[24C [ FAIT ]
+[2C- Checking promiscuous interfaces[26C [ OK ]
+[2C- Checking waiting connections[29C [ OK ]
+[2C- Checking status DHCP client[30C [ NOT ACTIVE ]
+[2C- Checking for ARP monitoring software[21C [ NON TROUVÉ ]
+[2C- Uncommon network protocols[31C [ NON TROUVÉ ]
+
+[+] Imprimantes et serveurs d'impression
+------------------------------------
+[2C- Checking cups daemon[37C [ NON TROUVÉ ]
+[2C- Checking lp daemon[39C [ NON LANCÉ ]
+
+[+] Logiciel : Email et messagerie
+------------------------------------
+
+[+] Logiciel : Pare-feu
+------------------------------------
+[2C- Checking iptables kernel module[26C [ TROUVÉ ]
+[4C- Checking iptables policies of chains[19C [ TROUVÉ ]
+[6C- Chain INPUT (table: filter, target: DROP)[12C [ DROP ]
+[6C- Chain INPUT (table: security, target: ACCEPT)[8C [ ACCEPT ]
+[4C- Checking for empty ruleset[29C [ OK ]
+[4C- Checking for unused rules[30C [ TROUVÉ ]
+[2C- Checking host based firewall[29C [ ACTIF ]
+
+[+] Logiciel : Serveur web
+------------------------------------
+[2C- Checking Apache (binary /usr/sbin/apache2)[15C [ TROUVÉ ]
+[6CInfo: Configuration file found (/etc/apache2/apache2.conf)[0C
+[6CInfo: No virtual hosts found[27C
+[4C* Loadable modules[39C [ TROUVÉ (118) ]
+[8C- Found 118 loadable modules[25C
+[10Cmod_evasive: anti-DoS/brute force[18C [ NON TROUVÉ ]
+[10Cmod_reqtimeout/mod_qos[29C [ TROUVÉ ]
+[10CModSecurity: web application firewall[14C [ NON TROUVÉ ]
+[2C- Checking TraceEnable setting in:[25C
+[4C  /etc/apache2/conf-enabled/other-vhosts-access-log.conf[1C [ NON TROUVÉ ]
+[4C  /etc/apache2/conf-enabled/localized-error-pages.conf[3C [ NON TROUVÉ ]
+[4C  /etc/apache2/conf-enabled/charset.conf[17C [ NON TROUVÉ ]
+[4C  /etc/apache2/conf-enabled/security.conf[16C [ TROUVÉ ]
+[4C  /etc/apache2/conf-enabled/javascript-common.conf[7C [ NON TROUVÉ ]
+[4C  /etc/apache2/conf-enabled/serve-cgi-bin.conf[11C [ NON TROUVÉ ]
+[4C  /etc/apache2/ports.conf[32C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/alias.conf[17C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/ldap.conf[18C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/cache_disk.conf[12C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/php8.4.conf[16C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/info.conf[18C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/mpm_worker.conf[12C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/mime_magic.conf[12C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/actions.conf[15C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/proxy.conf[17C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/autoindex.conf[13C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/mpm_prefork.conf[11C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/ssl.conf[19C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/proxy_html.conf[12C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/reqtimeout.conf[12C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/cgid.conf[18C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/deflate.conf[15C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/mpm_event.conf[13C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/proxy_ftp.conf[13C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/status.conf[16C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/http2.conf[17C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/mime.conf[18C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/setenvif.conf[14C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/proxy_balancer.conf[8C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/dir.conf[19C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/dav_fs.conf[16C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/negotiation.conf[11C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/userdir.conf[15C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-available/proxy_connect.conf[9C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/alias.conf[19C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/php8.4.conf[18C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/autoindex.conf[15C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/mpm_prefork.conf[13C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/reqtimeout.conf[14C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/deflate.conf[17C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/status.conf[18C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/mime.conf[20C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/setenvif.conf[16C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/dir.conf[21C [ NON TROUVÉ ]
+[4C  /etc/apache2/mods-enabled/negotiation.conf[13C [ NON TROUVÉ ]
+[4C  /etc/apache2/sites-enabled/000-default.conf[12C [ NON TROUVÉ ]
+[4C  /etc/apache2/apache2.conf[30C [ NON TROUVÉ ]
+[4C  /etc/apache2/sites-available/default-ssl.conf[10C [ NON TROUVÉ ]
+[4C  /etc/apache2/sites-available/000-default.conf[10C [ NON TROUVÉ ]
+[4C  /etc/apache2/conf-available/other-vhosts-access-log.conf[0C [ NON TROUVÉ ]
+[4C  /etc/apache2/conf-available/localized-error-pages.conf[1C [ NON TROUVÉ ]
+[4C  /etc/apache2/conf-available/charset.conf[15C [ NON TROUVÉ ]
+[4C  /etc/apache2/conf-available/security.conf[14C [ TROUVÉ ]
+[4C  /etc/apache2/conf-available/javascript-common.conf[5C [ NON TROUVÉ ]
+[4C  /etc/apache2/conf-available/serve-cgi-bin.conf[9C [ NON TROUVÉ ]
+[2C- Checking nginx[43C [ NON TROUVÉ ]
+
+[+] Prise en charge SSH
+------------------------------------
+[2C- Checking running SSH daemon[30C [ TROUVÉ ]
+[4C- Searching SSH configuration[28C [ TROUVÉ ]
+[4C- OpenSSH option: AllowTcpForwarding[21C [ OK ]
+[4C- OpenSSH option: ClientAliveCountMax[20C [ OK ]
+[4C- OpenSSH option: ClientAliveInterval[20C [ OK ]
+[4C- OpenSSH option: FingerprintHash[24C [ OK ]
+[4C- OpenSSH option: GatewayPorts[27C [ OK ]
+[4C- OpenSSH option: IgnoreRhosts[27C [ OK ]
+[4C- OpenSSH option: LoginGraceTime[25C [ OK ]
+[4C- OpenSSH option: LogLevel[31C [ OK ]
+[4C- OpenSSH option: MaxAuthTries[27C [ OK ]
+[4C- OpenSSH option: MaxSessions[28C [ OK ]
+[4C- OpenSSH option: PermitRootLogin[24C [ OK ]
+[4C- OpenSSH option: PermitUserEnvironment[18C [ OK ]
+[4C- OpenSSH option: PermitTunnel[27C [ OK ]
+[4C- OpenSSH option: Port[35C [ OK ]
+[4C- OpenSSH option: PrintLastLog[27C [ OK ]
+[4C- OpenSSH option: StrictModes[28C [ OK ]
+[4C- OpenSSH option: TCPKeepAlive[27C [ OK ]
+[4C- OpenSSH option: UseDNS[33C [ OK ]
+[4C- OpenSSH option: X11Forwarding[26C [ OK ]
+[4C- OpenSSH option: AllowAgentForwarding[19C [ OK ]
+[4C- OpenSSH option: AllowUsers[29C [ NON TROUVÉ ]
+[4C- OpenSSH option: AllowGroups[28C [ NON TROUVÉ ]
+
+[+] Prise en charge SNMP
+------------------------------------
+[2C- Checking running SNMP daemon[29C [ NON TROUVÉ ]
+
+[+] Bases de données
+------------------------------------
+[4CNo database engines found[32C
+
+[+] Services LDAP
+------------------------------------
+[2C- Checking OpenLDAP instance[31C [ NON TROUVÉ ]
+
+[+] PHP
+------------------------------------
+[2C- Checking PHP[45C [ TROUVÉ ]
+[4C- Checking PHP disabled functions[24C [ TROUVÉ ]
+[4C- Checking expose_php option[29C [ OFF ]
+[4C- Checking enable_dl option[30C [ OFF ]
+[4C- Checking allow_url_fopen option[24C [ OFF ]
+[4C- Checking allow_url_include option[22C [ OFF ]
+[4C- Checking listen option[33C [ OK ]
+
+[+] Prise en charge Squid
+------------------------------------
+[2C- Checking running Squid daemon[28C [ NON TROUVÉ ]
+
+[+] Journalisation et fichiers
+------------------------------------
+[2C- Checking for a running log daemon[24C [ OK ]
+[4C- Checking Syslog-NG status[30C [ NON TROUVÉ ]
+[4C- Checking systemd journal status[24C [ TROUVÉ ]
+[4C- Checking Metalog status[32C [ NON TROUVÉ ]
+[4C- Checking RSyslog status[32C [ TROUVÉ ]
+[4C- Checking RFC 3195 daemon status[24C [ NON TROUVÉ ]
+[4C- Checking minilogd instances[28C [ NON TROUVÉ ]
+[4C- Checking wazuh-agent daemon status[21C [ NON TROUVÉ ]
+[2C- Checking logrotate presence[30C [ OK ]
+[2C- Checking remote logging[34C [ NON ACTIVÉ ]
+[2C- Checking log directories (static list)[19C [ FAIT ]
+[2C- Checking open log files[34C [ FAIT ]
+[2C- Checking deleted files in use[28C [ FICHIERS TROUVÉS ]
+
+[+] Services non sécurisés
+------------------------------------
+[2C- Installed inetd package[34C [ NON TROUVÉ ]
+[2C- Installed xinetd package[33C [ OK ]
+[4C- xinetd status[42C [ NOT ACTIVE ]
+[2C- Installed rsh client package[29C [ OK ]
+[2C- Installed rsh server package[29C [ OK ]
+[2C- Installed telnet client package[26C [ OK ]
+[2C- Installed telnet server package[26C [ NON TROUVÉ ]
+[2C- Checking NIS client installation[25C [ OK ]
+[2C- Checking NIS server installation[25C [ OK ]
+[2C- Checking TFTP client installation[24C [ OK ]
+[2C- Checking TFTP server installation[24C [ OK ]
+
+[+] Bannières et identification
+------------------------------------
+[2C- /etc/issue[47C [ TROUVÉ ]
+[4C- /etc/issue contents[36C [ FAIBLE ]
+[2C- /etc/issue.net[43C [ TROUVÉ ]
+[4C- /etc/issue.net contents[32C [ FAIBLE ]
+
+[+] Tâches planifiées
+------------------------------------
+[2C- Checking crontab and cronjob files[23C [ FAIT ]
+
+[+] Comptes
+------------------------------------
+[2C- Checking accounting information[26C [ OK ]
+[2C- Checking sysstat accounting data[25C [ ACTIVÉ ]
+[2C- Checking auditd[42C [ ACTIVÉ ]
+[4C- Checking audit rules[35C [ OK ]
+[4C- Checking audit configuration file[22C [ OK ]
+[4C- Checking auditd log file[31C [ TROUVÉ ]
+
+[+] Heure et synchronisation
+------------------------------------
+[2C- NTP daemon found: chronyd[32C [ TROUVÉ ]
+[2C- Checking for a running NTP daemon or client[14C [ OK ]
+
+[+] Cryptographie
+------------------------------------
+[2C- Checking for expired SSL certificates [0/156][12C [ AUCUN ]
+
+  [WARNING]: Test CRYP-7902 had a long execution: 16.502119 seconds
+
+[2C- Kernel entropy is sufficient[29C [ OUI ]
+[2C- HW RNG & rngd[44C [ NON ]
+[2C- SW prng[50C [ NON ]
+[2C- MOR variable not found[35C [ FAIBLE ]
+
+[+] Virtualisation
+------------------------------------
+
+[+] Conteneurs
+------------------------------------
+
+[+] Frameworks de sécurité
+------------------------------------
+[2C- Checking presence AppArmor[31C [ TROUVÉ ]
+[4C- Checking AppArmor status[31C [ ACTIVÉ ]
+[8CFound 135 unconfined processes[23C
+[2C- Checking presence SELinux[32C [ NON TROUVÉ ]
+[2C- Checking presence TOMOYO Linux[27C [ NON TROUVÉ ]
+[2C- Checking presence grsecurity[29C [ NON TROUVÉ ]
+[2C- Checking for implemented MAC framework[19C [ OK ]
+
+[+] Logiciel : Intégrité de fichier
+------------------------------------
+[2C- Checking file integrity tools[28C
+[4C- AIDE[51C [ TROUVÉ ]
+[6C- AIDE config file[37C [ TROUVÉ ]
+[6C- AIDE database[40C [ AVERTISSEMENT ]
+[6C- AIDE config (Checksum)[31C [ Suggestion ]
+[2C- Checking presence integrity tool[25C [ TROUVÉ ]
+
+[+] Logiciel : System tooling
+------------------------------------
+[2C- Checking automation tooling[30C
+[2C- Automation tooling[39C [ NON TROUVÉ ]
+[2C- Checking presence of Fail2ban[28C [ TROUVÉ ]
+[4C- Checking Fail2ban jails[32C [ ACTIVÉ ]
+[2C- Checking for IDS/IPS tooling[29C [ TROUVÉ ]
+
+[+] Logiciel : Malveillants
+------------------------------------
+[2C- Vérification Rootkit Hunter[30C [ TROUVÉ ]
+[2C- Malware software components[30C [ TROUVÉ ]
+[4C- Active agent[43C [ NON TROUVÉ ]
+[4C- Rootkit scanner[40C [ TROUVÉ ]
+
+[+] Permissions de fichier
+------------------------------------
+[2C- Starting file permissions check[26C
+[4CFile: /boot/grub/grub.cfg[32C [ OK ]
+[4CFile: /etc/crontab[39C [ SUGGESTION ]
+[4CFile: /etc/group[41C [ OK ]
+[4CFile: /etc/group-[40C [ OK ]
+[4CFile: /etc/hosts.allow[35C [ OK ]
+[4CFile: /etc/hosts.deny[36C [ OK ]
+[4CFile: /etc/issue[41C [ OK ]
+[4CFile: /etc/issue.net[37C [ OK ]
+[4CFile: /etc/passwd[40C [ OK ]
+[4CFile: /etc/passwd-[39C [ OK ]
+[4CFile: /etc/ssh/sshd_config[31C [ SUGGESTION ]
+[4CDirectory: /root/.ssh[36C [ OK ]
+[4CDirectory: /etc/cron.d[35C [ SUGGESTION ]
+[4CDirectory: /etc/cron.daily[31C [ SUGGESTION ]
+[4CDirectory: /etc/cron.hourly[30C [ SUGGESTION ]
+[4CDirectory: /etc/cron.weekly[30C [ SUGGESTION ]
+[4CDirectory: /etc/cron.monthly[29C [ SUGGESTION ]
+
+[+] Dossiers personnels
+------------------------------------
+[2C- Permissions of home directories[26C [ OK ]
+[2C- Ownership of home directories[28C [ OK ]
+[2C- Checking shell history files[29C [ OK ]
+
+[+] Kernel Hardening
+------------------------------------
+[2C- Comparing sysctl key pairs with scan profile[13C
+[4C- dev.tty.ldisc_autoload (exp: 0)[24C [ OK ]
+[4C- fs.protected_fifos (exp: 2)[28C [ OK ]
+[4C- fs.protected_hardlinks (exp: 1)[24C [ OK ]
+[4C- fs.protected_regular (exp: 2)[26C [ OK ]
+[4C- fs.protected_symlinks (exp: 1)[25C [ OK ]
+[4C- fs.suid_dumpable (exp: 0)[30C [ OK ]
+[4C- kernel.core_uses_pid (exp: 1)[26C [ OK ]
+[4C- kernel.ctrl-alt-del (exp: 0)[27C [ OK ]
+[4C- kernel.dmesg_restrict (exp: 1)[25C [ OK ]
+[4C- kernel.kptr_restrict (exp: 2)[26C [ OK ]
+[4C- kernel.modules_disabled (exp: 1)[23C [ DIFFÉRENT ]
+[4C- kernel.perf_event_paranoid (exp: 2 3 4)[16C [ OK ]
+[4C- kernel.randomize_va_space (exp: 2)[21C [ OK ]
+[4C- kernel.sysrq (exp: 0)[34C [ OK ]
+[4C- kernel.unprivileged_bpf_disabled (exp: 1)[14C [ OK ]
+[4C- kernel.yama.ptrace_scope (exp: 1 2 3)[18C [ OK ]
+[4C- net.core.bpf_jit_harden (exp: 2)[23C [ OK ]
+[4C- net.ipv4.conf.all.accept_redirects (exp: 0)[12C [ OK ]
+[4C- net.ipv4.conf.all.accept_source_route (exp: 0)[9C [ OK ]
+[4C- net.ipv4.conf.all.bootp_relay (exp: 0)[17C [ OK ]
+[4C- net.ipv4.conf.all.forwarding (exp: 0)[18C [ OK ]
+[4C- net.ipv4.conf.all.log_martians (exp: 1)[16C [ OK ]
+[4C- net.ipv4.conf.all.mc_forwarding (exp: 0)[15C [ OK ]
+[4C- net.ipv4.conf.all.proxy_arp (exp: 0)[19C [ OK ]
+[4C- net.ipv4.conf.all.rp_filter (exp: 1)[19C [ OK ]
+[4C- net.ipv4.conf.all.send_redirects (exp: 0)[14C [ OK ]
+[4C- net.ipv4.conf.default.accept_redirects (exp: 0)[8C [ OK ]
+[4C- net.ipv4.conf.default.accept_source_route (exp: 0)[5C [ OK ]
+[4C- net.ipv4.conf.default.log_martians (exp: 1)[12C [ OK ]
+[4C- net.ipv4.icmp_echo_ignore_broadcasts (exp: 1)[10C [ OK ]
+[4C- net.ipv4.icmp_ignore_bogus_error_responses (exp: 1)[4C [ OK ]
+[4C- net.ipv4.tcp_syncookies (exp: 1)[23C [ OK ]
+[4C- net.ipv4.tcp_timestamps (exp: 0 1)[21C [ OK ]
+[4C- net.ipv6.conf.all.accept_redirects (exp: 0)[12C [ OK ]
+[4C- net.ipv6.conf.all.accept_source_route (exp: 0)[9C [ OK ]
+[4C- net.ipv6.conf.default.accept_redirects (exp: 0)[8C [ OK ]
+[4C- net.ipv6.conf.default.accept_source_route (exp: 0)[5C [ OK ]
+
+[+] Hardening
+------------------------------------
+[4C- Installed compiler(s)[34C [ TROUVÉ ]
+[4C- Installed malware scanner[30C [ TROUVÉ ]
+[4C- Non-native binary formats[30C [ TROUVÉ ]
+
+[+] Tests personnalisés
+------------------------------------
+[2C- Running custom tests... [33C [ AUCUN ]
+
+[+] Plugins (phase 2)
+------------------------------------
+
+================================================================================
+
+  -[ Lynis 3.1.4 Results ]-
+
+  Great, no warnings
+
+  Suggestions (25):
+  ----------------------------
+  * This release is more than 4 months old. Check the website or GitHub to see if there is an update available. [LYNIS] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/LYNIS/
+
+  * Install apt-listbugs to display a list of critical bugs prior to each APT installation. [DEB-0810] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/DEB-0810/
+
+  * Determine runlevel and services at startup [BOOT-5180] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/BOOT-5180/
+
+  * Consider hardening system services [BOOT-5264] 
+    - Details  : Run '/usr/bin/systemd-analyze security SERVICE' for each service
+    - Related resources
+      * Article: Systemd features to secure service files: https://linux-audit.com/systemd/systemd-features-to-secure-units-and-services/
+      * Website: https://cisofy.com/lynis/controls/BOOT-5264/
+
+  * Check the output of ps for dead or zombie processes [PROC-3612] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/PROC-3612/
+
+  * Check PAM configuration, add rounds if applicable and expire passwords to encrypt with new values [AUTH-9229] 
+    - Related resources
+      * Article: Linux password security: hashing rounds: https://linux-audit.com/authentication/configure-the-minimum-password-length-on-linux-systems/
+      * Website: https://cisofy.com/lynis/controls/AUTH-9229/
+
+  * When possible set expire dates for all password protected accounts [AUTH-9282] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/AUTH-9282/
+
+  * Look at the locked accounts and consider removing them [AUTH-9284] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/AUTH-9284/
+
+  * To decrease the impact of a full /home file system, place /home on a separate partition [FILE-6310] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/FILE-6310/
+
+  * To decrease the impact of a full /var file system, place /var on a separate partition [FILE-6310] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/FILE-6310/
+
+  * Check DNS configuration for the dns domain name [NAME-4028] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/NAME-4028/
+
+  * Check debsums configuration and enable checking regularly via a cron job (CRON_CHECK in default file). [PKGS-7370] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/PKGS-7370/
+
+  * Check iptables rules to see which rules are currently not used [FIRE-4513] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/FIRE-4513/
+
+  * Install Apache mod_evasive to guard webserver against DoS/brute force attempts [HTTP-6640] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/HTTP-6640/
+
+  * Install Apache modsecurity to guard webserver against web application attacks [HTTP-6643] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/HTTP-6643/
+
+  * Enable logging to an external logging host for archiving purposes and additional protection [LOGG-2154] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/LOGG-2154/
+
+  * Check what deleted files are still in use and why. [LOGG-2190] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/LOGG-2190/
+
+  * Add a legal banner to /etc/issue, to warn unauthorized users [BANN-7126] 
+    - Related resources
+      * Article: The real purpose of login banners: https://linux-audit.com/the-real-purpose-of-login-banners-on-linux/
+      * Website: https://cisofy.com/lynis/controls/BANN-7126/
+
+  * Add legal banner to /etc/issue.net, to warn unauthorized users [BANN-7130] 
+    - Related resources
+      * Article: The real purpose of login banners: https://linux-audit.com/the-real-purpose-of-login-banners-on-linux/
+      * Website: https://cisofy.com/lynis/controls/BANN-7130/
+
+  * Check the AIDE database as it may contain errors [FINT-4316] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/FINT-4316/
+
+  * Use SHA256 or SHA512 to create checksums in AIDE [FINT-4402] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/FINT-4402/
+
+  * Determine if automation tools are present for system management [TOOL-5002] 
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/TOOL-5002/
+
+  * Consider restricting file permissions [FILE-7524] 
+    - Details  : See screen output or log file
+    - Solution : Use chmod to change file permissions
+    - Related resources
+      * Website: https://cisofy.com/lynis/controls/FILE-7524/
+
+  * One or more sysctl values differ from the scan profile and could be tweaked [KRNL-6000] 
+    - Solution : Change sysctl value or disable test (skip-test=KRNL-6000:<sysctl-key>)
+    - Related resources
+      * Article: Linux hardening with sysctl settings: https://linux-audit.com/linux-hardening-with-sysctl/
+      * Article: Overview of sysctl options and values: https://linux-audit.com/kernel/sysctl/
+      * Website: https://cisofy.com/lynis/controls/KRNL-6000/
+
+  * Harden compilers like restricting access to root user only [HRDN-7222] 
+    - Related resources
+      * Article: Why remove compilers from your system?: https://linux-audit.com/software/why-remove-compilers-from-your-system/
+      * Website: https://cisofy.com/lynis/controls/HRDN-7222/
+
+  Follow-up:
+  ----------------------------
+  - Show details of a test (lynis show details TEST-ID)
+  - Check the logfile for all details (less /var/log/lynis.log)
+  - Read security controls texts (https://cisofy.com)
+  - Use --upload to upload data to central system (Lynis Enterprise users)
+
+================================================================================
+
+  Lynis security scan details:
+
+  Hardening index : 86 [#################   ]
+  Tests performed : 276
+  Plugins enabled : 1
+
+  Components:
+  - Firewall               [V]
+  - Malware scanner        [V]
+
+  Scan mode:
+  Normal [V]  Forensics [ ]  Integration [ ]  Pentest [ ]
+
+  Lynis modules:
+  - Compliance status      [?]
+  - Security audit         [V]
+  - Vulnerability scan     [V]
+
+  Files:
+  - Test and debug information      : /var/log/lynis.log
+  - Report data                     : /var/log/lynis-report.dat
+
+================================================================================
+
+  Lynis 3.1.4
+
+  Auditing, system hardening, and compliance for UNIX-based systems
+  (Linux, macOS, BSD, and others)
+
+  2007-2024, CISOfy - https://cisofy.com/lynis/
+  Enterprise support available (compliance, plugins, interface and tools)
+
+================================================================================
+
+  [TIP]: Enhance Lynis audits by adding your settings to custom.prf (see /etc/lynis/default.prf for all settings)
+
