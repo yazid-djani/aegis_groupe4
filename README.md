@@ -26,12 +26,6 @@ Notre mission est d'auditer, sécuriser et documenter l'infrastructure.
 
 ---
 
-## 📁 Structure du projet
-<img width="1360" height="1211" alt="arborescence_aegis_complete" src="https://github.com/user-attachments/assets/99ff269d-8fba-4b0c-80ab-4df873a58adc" />
-
-
----
-
 ## 🔴 Vulnérabilités identifiées (avant sécurisation)
 
 | # | Vulnérabilité | Criticité |
